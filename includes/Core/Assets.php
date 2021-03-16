@@ -5,10 +5,10 @@
  * commonly used HTML form tags.
  *
  * @package       JPToolkit
- * @subpackage    JPToolkit
+ * @subpackage    JPToolkit\Core
  */
 
-namespace JPToolkit;
+namespace JPToolkit\Core;
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
@@ -17,10 +17,10 @@ defined('ABSPATH') || exit;
  * This class is required to initialize the shorthands bundled in this plugin
  *
  * @package       JPToolkit
- * @subpackage    JPToolkit
+ * @subpackage    JPToolkit\Core
  * @author        Javier Prieto
  * @since         1.0.0
  */
-class Init
+class Assets
 {
 }

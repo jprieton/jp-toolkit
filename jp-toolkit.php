@@ -7,7 +7,7 @@
  * Tags:                jp-toolkit
  * Version:             1.0.0
  * Requires at least:   5.2
- * Tested up to:        5.6
+ * Tested up to:        5.7
  * Author:              Javier Prieto
  * Author URI:          https://github.com/jprieton
  * Text Domain:         jp-toolkit
