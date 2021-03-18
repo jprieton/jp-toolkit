@@ -14,6 +14,7 @@ namespace JPToolkit;
 defined('ABSPATH') || exit;
 
 use JPToolkit\HtmlHelper\Init as HtmlHelperInit;
+use JPToolkit\AssetsHelper\Init as AssetsHelperInit;
 
 /**
  * This class is required to initialize the shorthands bundled in this plugin
@@ -33,6 +34,7 @@ class Init
   {
     // Initialize helpers
     new HtmlHelperInit();
+    new AssetsHelperInit();
 
     // Adds non-default cron schedules
     add_filter('cron_schedules', [$this, 'add_cron_schedules'], 999);
@@ -45,7 +47,7 @@ class Init
    * @param     array     $schedules
    * @return    array
    */
-  public function add_cron_schedules($schedules = [])
+  public function add_cron_schedules(array $schedules = [])
   {
 
     if (!isset($schedules['twicemonthly'])) {
