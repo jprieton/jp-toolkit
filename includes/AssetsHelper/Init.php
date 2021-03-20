@@ -40,12 +40,50 @@ class Init
      */
     public function __construct()
     {
-        // Initialize Stylesheets
-        new Stylesheets();
+        $this->register_assets();
 
         // Add preconnect tags
         add_filter('wp_resource_hints', [$this, 'resource_hints'], 99, 2);
+
     }
+
+    /**
+     * Register and enqueue plugin assets
+     */
+    private function register_assets() {
+        Styles::register_asset('jp-toolkit', [
+            'local'    => plugins_url('assets/css/public.min.css', JPTOOLKIT_FILENAME),
+            'ver'      => JPTOOLKIT_VERSION,
+            'enqueue' => false,
+        ]);
+        Styles::register_admin_asset('jp-toolkit', [
+            'local'    => plugins_url('assets/css/admin.min.css', JPTOOLKIT_FILENAME),
+            'ver'      => JPTOOLKIT_VERSION,
+            'enqueue' => false,
+        ]);
+
+        // Initialize Styles and add hooks
+        $styles = new Styles();
+        $styles->init();
+
+        Scripts::register_asset('jp-toolkit', [
+            'local'     => plugins_url('assets/js/public.min.js', JPTOOLKIT_FILENAME),
+            'ver'       => JPTOOLKIT_VERSION,
+            'enqueue'   => false,
+            'in_footer' => true,
+        ]);
+        Scripts::register_admin_asset('jp-toolkit', [
+            'local'     => plugins_url('assets/js/admin.min.js', JPTOOLKIT_FILENAME),
+            'ver'       => JPTOOLKIT_VERSION,
+            'enqueue'   => false,
+            'in_footer' => true,
+        ]);
+
+        // Initialize Scripts and add hooks
+        $styles = new Scripts();
+        $styles->init();
+    }
+
 
     /**
      * Add resource hints to header
