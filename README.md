@@ -1,5 +1,8 @@
 # JP Toolkit for WordPress
 
+###### An integrated bundle of JP Toolkit modules and third party libraries
+
+
 ## Installing
 
 #### Manual
@@ -11,24 +14,20 @@ Recommended in most cases.
 3. Upload the ZIP file.
 4. Activate the plugin.
 
-#### Via Composer
+<br>
 
-This plugin is also available as [Composer package](https://packagist.org/packages/jp-toolkit/jp-toolkit) and can be installed via Composer from the root of your theme or plugin. Recommended when you want to bundle in your theme or plugin.
+## Modules bundled
 
-```bash
-composer require jp-toolkit/jp-toolkit
-```
+- [JP Toolkit HTML Helper](https://github.com/jprieton/jp-toolkit-html-helper)
+- [JP Toolkit Request Helper](https://github.com/jprieton/jp-toolkit-request-helper)
 
-**Note:**
+<br>
 
-When is installed via Composer it is necessary to initialize the **shortcodes** and **shorthands** handlers, this code can be placed in your `functions.php` of your theme or the root file of your plugin.
+## Libraries bundled
 
-```php
-// functions.php
-new JPToolkit\Init();
-```
+#### PHP
 
- This code is **only** required when is installed via Composer, if you do not want use these handlers you can skip this step.
+- [WPTRT Admin Notices](https://github.com/WPTRT/admin-notices) to create admin-notices for the WordPress dashboard.
 
 <br>
 

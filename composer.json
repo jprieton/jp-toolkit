@@ -1,11 +1,14 @@
 {
     "name": "jp-toolkit/jp-toolkit",
-    "description": "JP Toolkit",
+    "description": "An integrated bundle of JP Toolkit modules and third party libraries",
     "type": "wordpress-plugin",
     "keywords": [
         "wordpress",
         "wordpress-development",
-        "jp-toolkit"
+        "jp-toolkit",
+        "jp-toolkit",
+        "html",
+        "form"
     ],
     "homepage": "https://github.com/jprieton/jp-toolkit",
     "license": "GPL-3.0-or-later",
