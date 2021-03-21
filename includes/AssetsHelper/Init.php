@@ -54,15 +54,15 @@ class Init
         Styles::register_asset('jp-toolkit', [
             'local'    => plugins_url('assets/css/public.min.css', JPTOOLKIT_FILENAME),
             'ver'      => JPTOOLKIT_VERSION,
-            'enqueue' => false,
+            'enqueue'  => false,
         ]);
         Styles::register_admin_asset('jp-toolkit', [
             'local'    => plugins_url('assets/css/admin.min.css', JPTOOLKIT_FILENAME),
             'ver'      => JPTOOLKIT_VERSION,
-            'enqueue' => false,
+            'enqueue'  => false,
         ]);
 
-        // Initialize Styles and add hooks
+        // Initialize Styles
         $styles = new Styles();
         $styles->init();
 
@@ -79,7 +79,7 @@ class Init
             'in_footer' => true,
         ]);
 
-        // Initialize Scripts and add hooks
+        // Initialize Scripts
         $styles = new Scripts();
         $styles->init();
     }
@@ -92,7 +92,6 @@ class Init
      */
     public function resource_hints(array $urls, string $relation_type)
     {
-
         foreach ($urls as $url) {
             switch ($url) {
                 case 'fonts.googleapis.com': // Google Fonts

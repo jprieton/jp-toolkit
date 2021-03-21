@@ -49,7 +49,6 @@ class Init
    */
   public function add_cron_schedules(array $schedules = [])
   {
-
     if (!isset($schedules['twicemonthly'])) {
       $schedules['twicemonthly'] = [
         'interval' => MONTH_IN_SECONDS / 2,
