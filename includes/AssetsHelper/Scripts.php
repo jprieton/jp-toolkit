@@ -98,7 +98,7 @@ class Scripts
 
             wp_register_script($handle, $src, (array) $asset['deps'], $asset['ver'], $asset['in_footer']);
 
-            if ($asset['autoload']) {
+            if ($asset['enqueue']) {
                 wp_enqueue_script($handle);
             }
         }

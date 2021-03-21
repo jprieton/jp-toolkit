@@ -15,6 +15,7 @@ defined('ABSPATH') || exit;
 
 use JPToolkit\HtmlHelper\Init as HtmlHelperInit;
 use JPToolkit\AssetsHelper\Init as AssetsHelperInit;
+use JPToolkit\Admin\Init as AdminInit;
 
 /**
  * This class is required to initialize the shorthands bundled in this plugin
@@ -32,6 +33,9 @@ class Init
    */
   public function __construct()
   {
+    // Initialize admin
+    new AdminInit();
+
     // Initialize helpers
     new HtmlHelperInit();
     new AssetsHelperInit();
