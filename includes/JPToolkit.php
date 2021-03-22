@@ -24,14 +24,14 @@ use JPToolkit\Admin\Init as AdminInit;
  * @author        Javier Prieto
  * @since         1.0.0
  */
-class Init
+class JPToolkit
 {
   /**
    * Constructor class
    *
    * @since         1.1.0
    */
-  public function __construct()
+  public function init()
   {
     // Initialize admin
     new AdminInit();
