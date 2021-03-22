@@ -97,7 +97,7 @@ class Styles
 
             wp_register_style($handle, $src, (array) $asset['deps'], $asset['ver'], $asset['media']);
 
-            if ($asset['autoload']) {
+            if ($asset['enqueue']) {
                 wp_enqueue_style($handle);
             }
         }

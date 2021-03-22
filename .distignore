@@ -1,6 +1,7 @@
 bin
 composer.json
 composer.lock
+jp-toolkit.code-workspace
 nbproject
 phpunit.xml.dist
 tests

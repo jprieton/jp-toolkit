@@ -1,8 +1,7 @@
 <?php
 
 /**
- * The Init class initializes the Html Helper plugin
- * commonly used HTML form tags.
+ * The Init class initializes the Assets Helper
  *
  * @package       JPToolkit
  * @subpackage    JPToolkit
@@ -14,7 +13,7 @@ namespace JPToolkit\AssetsHelper;
 defined('ABSPATH') || exit;
 
 /**
- * This class is required to initialize the assets
+ * The Init class initializes the Assets Helper
  *
  * @package       JPToolkit
  * @author        Javier Prieto
@@ -83,7 +82,6 @@ class Init
         $styles = new Scripts();
         $styles->init();
     }
-
 
     /**
      * Add resource hints to header
