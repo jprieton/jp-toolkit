@@ -164,7 +164,7 @@ class LoginPageCustomizer
     public function set_header_image()
     {
         $image = get_theme_mod('jp_toolkit_login_page_header_image');
-        if (!empty($image)) {
+        if (empty($image)) {
             return;
         }
 
@@ -270,10 +270,12 @@ class LoginPageCustomizer
         $this->set_background_image();
         $this->set_background_color();
 
-        echo "
-        <style type='text/css> 
-        {$this->stylesheet}
-        </style>
-        ";
+        if (!empty($this->stylesheet)) {
+            echo "
+            <style type='text/css'> 
+            {$this->stylesheet}
+            </style>
+            ";
+        }
     }
 }

@@ -4,7 +4,7 @@
  * The Init class initializes the Assets Helper
  *
  * @package       JPToolkit
- * @subpackage    JPToolkit
+ * @subpackage    AssetsHelper
  */
 
 namespace JPToolkit\AssetsHelper;
@@ -15,9 +15,11 @@ defined('ABSPATH') || exit;
 /**
  * The Init class initializes the Assets Helper
  *
- * @package       JPToolkit
- * @author        Javier Prieto
  * @since         1.0.0
+ * 
+ * @package       JPToolkit
+ * @subpackage    AssetsHelper
+ * @author        Javier Prieto
  */
 class Init
 {

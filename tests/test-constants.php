@@ -3,7 +3,7 @@
 /**
  * Class SampleTest
  *
- * @package SourceFramework
+ * @package JPToolkit
  */
 
 /**
