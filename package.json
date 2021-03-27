@@ -1,6 +1,6 @@
 {
   "name": "jp-toolkit",
-  "version": "2.4.1",
+  "version": "1.1.1",
   "description": "An extensible object-oriented tools for WordPress that helps you to develop themes and plugins.",
   "scripts": {
     "build": "composer install --no-dev --optimize-autoloader && rm -rf ./dist && wp-scripts build && rm ../jp-toolkit.zip && wp dist-archive . ../plugins/jp-toolkit.zip",
