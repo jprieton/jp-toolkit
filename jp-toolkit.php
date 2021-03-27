@@ -47,7 +47,7 @@ if (version_compare(PHP_VERSION, '7.0', '<')) {
     $notices->add('jp-toolkit-php-warning', '', $message, $options);
     $notices->boot();
 } else {
-    define('JPTOOLKIT_VERSION', '1.1.0');
+    define('JPTOOLKIT_VERSION', '1.1.1');
     define('JPTOOLKIT_FILENAME', __FILE__);
 
     // Initialize the plugin

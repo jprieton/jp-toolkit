@@ -4,7 +4,7 @@
  * The Init class initializes the Assets Helper
  *
  * @package       JPToolkit
- * @subpackage    JPToolkit
+ * @subpackage    AssetsHelper
  */
 
 namespace JPToolkit\AssetsHelper;
@@ -15,9 +15,11 @@ defined('ABSPATH') || exit;
 /**
  * The Init class initializes the Assets Helper
  *
- * @package       JPToolkit
- * @author        Javier Prieto
  * @since         1.0.0
+ * 
+ * @package       JPToolkit
+ * @subpackage    AssetsHelper
+ * @author        Javier Prieto
  */
 class Init
 {
@@ -51,12 +53,12 @@ class Init
      */
     private function register_assets() {
         Styles::register_asset('jp-toolkit', [
-            'local'    => plugins_url('assets/css/public.min.css', JPTOOLKIT_FILENAME),
+            'local'    => plugins_url('dist/css/public-styles.css', JPTOOLKIT_FILENAME),
             'ver'      => JPTOOLKIT_VERSION,
             'enqueue'  => false,
         ]);
         Styles::register_admin_asset('jp-toolkit', [
-            'local'    => plugins_url('assets/css/admin.min.css', JPTOOLKIT_FILENAME),
+            'local'    => plugins_url('dist/css/admin-styles.css', JPTOOLKIT_FILENAME),
             'ver'      => JPTOOLKIT_VERSION,
             'enqueue'  => false,
         ]);
@@ -66,13 +68,13 @@ class Init
         $styles->init();
 
         Scripts::register_asset('jp-toolkit', [
-            'local'     => plugins_url('assets/js/public.min.js', JPTOOLKIT_FILENAME),
+            'local'     => plugins_url('dist/js/public-scripts.js', JPTOOLKIT_FILENAME),
             'ver'       => JPTOOLKIT_VERSION,
             'enqueue'   => false,
             'in_footer' => true,
         ]);
         Scripts::register_admin_asset('jp-toolkit', [
-            'local'     => plugins_url('assets/js/admin.min.js', JPTOOLKIT_FILENAME),
+            'local'     => plugins_url('dist/js/admin-scripts.js', JPTOOLKIT_FILENAME),
             'ver'       => JPTOOLKIT_VERSION,
             'enqueue'   => false,
             'in_footer' => true,
