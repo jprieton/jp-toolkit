@@ -2,8 +2,7 @@ bin
 composer.json
 composer.lock
 dist/**/*.map
-dist/js/admin-styles.js
-dist/js/public-styles.js
+dist/js/*-styles.js
 nbproject
 node_modules
 package.json
@@ -12,7 +11,7 @@ phpunit.xml.dist
 src
 tests
 Gruntfile.js
-jp-toolkit.code-workspace
+*.code-workspace
 postcss.config.js
 webpack.config.js
 .distignore

@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/jprieton/jp-toolkit
  * Description:         JP Toolkit for WordPress
  * Tags:                jp-toolkit
- * Version:             1.1.0
+ * Version:             1.1.2
  * Requires at least:   5.2
  * Tested up to:        5.7
  * Author:              Javier Prieto
@@ -47,7 +47,7 @@ if (version_compare(PHP_VERSION, '7.0', '<')) {
     $notices->add('jp-toolkit-php-warning', '', $message, $options);
     $notices->boot();
 } else {
-    define('JPTOOLKIT_VERSION', '1.1.1');
+    define('JPTOOLKIT_VERSION', '1.1.2');
     define('JPTOOLKIT_FILENAME', __FILE__);
 
     // Initialize the plugin
