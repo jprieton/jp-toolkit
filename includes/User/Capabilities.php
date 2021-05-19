@@ -7,7 +7,7 @@
  * @subpackage     User
  */
 
-namespace JPToolkit\Tools;
+namespace JPToolkit\User;
 
 // If this file is called directly, abort.
 if (!defined('ABSPATH')) {
