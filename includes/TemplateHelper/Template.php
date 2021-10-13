@@ -28,34 +28,34 @@ class Template
      *
      * @var string
      */
-    private $template_path   = '';
+    private $plugin_template_path   = '';
 
     /**
      * Path of template folder in the theme, this allow override plugins template
      *
      * @var string
      */
-    private $stylesheet_path = '';
+    private $theme_folder = '';
 
     /**
      * Slug to allow fire custom actions 
      *
      * @var string
      */
-    private $namespace       = '';
+    private $prefix       = '';
 
     /**
      * Class Constructor
      *
-     * @param string $template_path     Absolute path of your template folder in your plugin
-     * @param string $stylesheet_path   Relative path of your template folder in your theme
-     * @param string $namespace         Optional, this is used to prefix actions
+     * @param string $plugin_template_path  Absolute path of your template folder in your plugin
+     * @param string $theme_folder          Relative path of your template folder in your theme
+     * @param string $prefix                Optional, this is used to prefix actions
      */
-    public function __construct($template_path, $stylesheet_path, $namespace = '')
+    public function __construct($plugin_template_path, $theme_folder, $prefix = '')
     {
-        $this->template_path = $template_path;
-        $this->stylesheet_path = STYLESHEETPATH . '/' . $stylesheet_path;
-        $this->namespace = $namespace;
+        $this->plugin_template_path = trailingslashit($plugin_template_path);
+        $this->theme_folder         = trailingslashit($theme_folder);
+        $this->prefix               = $prefix;
     }
 
     /**
@@ -93,7 +93,7 @@ class Template
         $templates[] = "{$slug}.php";
 
 
-        if (!empty($this->namespace)) {
+        if (!empty($this->prefix)) {
             /**
              * Fires before a template part is loaded.
              *
@@ -104,7 +104,7 @@ class Template
              * @param string[] $templates Array of template files to search for, in order.
              * @param array    $args      Additional arguments passed to the template.
              */
-            do_action("{$this->namespace}_get_template_part", $slug, $name, $templates, $args);
+            do_action("{$this->prefix}_get_template_part", $slug, $name, $templates, $args);
         }
 
         if (!$this->locate_template($templates, true, false, $args)) {
@@ -115,7 +115,7 @@ class Template
     /**
      * Retrieve the name of the highest priority template file that exists.
      *
-     * Searches in the $stylesheet_path before $template_path and wp-includes/theme-compat
+     * Searches in the $theme_folder before $template_path and wp-includes/theme-compat
      * so that themes which inherit from a parent theme can just overload one file.
      *
      * @since 1.2.0
@@ -130,18 +130,23 @@ class Template
      */
     public function locate_template($templates, $load = false, $require_once = true, $args = [])
     {
-
         $located = '';
         foreach ((array) $templates as $template) {
             if (!$template) {
                 continue;
             }
 
-            if (file_exists($this->stylesheet_path . '/' . $template)) {
-                $located = $this->stylesheet_path . '/' . $template;
+            if (file_exists(STYLESHEETPATH . '/' . $this->theme_folder  . $template)) {
+                // Child theme template path
+                $located = STYLESHEETPATH . '/' . $this->theme_folder . $template;
                 break;
-            } elseif (file_exists($this->template_path . '/' . $template)) {
-                $located = $this->template_path . '/' . $template;
+            } elseif (file_exists(TEMPLATEPATH . '/' . $this->theme_folder  . $template)) {
+                // Parent theme template path
+                $located = TEMPLATEPATH . '/' . $this->theme_folder . $template;
+                break;
+            } elseif (file_exists($this->plugin_template_path . $template)) {
+                // Plugin template path
+                $located = $this->plugin_template_path . $template;
                 break;
             }
         }
