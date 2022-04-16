@@ -31,7 +31,7 @@ class TestFormatting extends WP_UnitTestCase
 			],
 			// Numeric values
 			[
-				'test'     => [1, 2, -1, '1'],
+				'test'     => [1, '1'],
 				'expected' => 'yes',
 			],
 			[
@@ -40,14 +40,17 @@ class TestFormatting extends WP_UnitTestCase
 			],
 			// Invalid values
 			[
-				'test'     => [new stdClass(), [], 'hello'],
+				'test'     => [new stdClass(), [], 'hello', -1, '365', '-1', 2, '2'],
 				'expected' => 'no',
 			],
 		];
 
 		foreach ($tests as $item) {
 			foreach ($item['test'] as $value) {
-				$this->assertEquals($item['expected'], jp_toolkit_sanitize_yes_no_field($value));
+				$this->assertEquals(
+					$item['expected'],
+					jp_toolkit_sanitize_yes_no_field($value)
+				);
 			}
 		}
 	}

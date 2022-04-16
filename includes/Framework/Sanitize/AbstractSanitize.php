@@ -30,10 +30,10 @@ abstract class AbstractSanitize
 	 *
 	 * @since 	{VERSION}
 	 * @param 	mixed	$value
-	 * @param 	mixed 	$args
+	 * @param 	array 	$args
 	 * @return 	mixed
 	 */
-	protected static function sanitize_value(mixed $value, mixed $args = null): mixed
+	protected static function sanitize_value($value, array $args = null)
 	{
 		// Default args
 		$defaults = [
@@ -45,7 +45,7 @@ abstract class AbstractSanitize
 
 		// If preset is set, override defaults
 		if (!empty($args['preset'])) {
-			$defaults = wp_parse_args($defaults, self::get_preset($args['preset']));
+			$defaults = wp_parse_args(self::get_preset($args['preset']), $defaults);
 		}
 
 		$args = wp_parse_args($args, $defaults);
@@ -76,7 +76,7 @@ abstract class AbstractSanitize
 	 * @param     array $callable
 	 * @return    mixed
 	 */
-	protected static function callback(mixed $value, array $callable = []): mixed
+	protected static function callback($value, array $callable = [])
 	{
 		foreach ($callable as $callback) {
 			if (is_callable($callback)) {
@@ -93,7 +93,7 @@ abstract class AbstractSanitize
 	 * @param     array $filter
 	 * @return    mixed
 	 */
-	protected static function filter(mixed $value, array $filters = []): mixed
+	protected static function filter($value, array $filters = [])
 	{
 		foreach ($filters as $filter) {
 			if (has_filter($filter)) {

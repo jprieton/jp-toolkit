@@ -27,12 +27,17 @@ class Sanitize extends AbstractSanitize implements SanitizeInterface
 	 * Sanitizes a value.
 	 *
 	 * @since 	{VERSION}
-	 * @param 	mixed	$field
-	 * @param 	mixed 	$args
+	 * @param 	mixed			$field
+	 * @param 	array|string 	$args
 	 * @return 	mixed
 	 */
-	public static function sanitize(mixed $var, mixed $args = null): mixed
+	public static function sanitize($var, $args = null)
 	{
+		// No args, no rules to apply
+		if (empty($args)) {
+			return $var;
+		}
+
 		// If $args is string check if exists a preset shorthand
 		if (is_string($args) ) {
 			$args = self::get_preset($args);

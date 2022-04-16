@@ -28,7 +28,9 @@ interface SanitizeInterface
 	 * Sanitize handler
 	 *
 	 * @since 	{VERSION}
-	 * @return 	void
+	 * @param 	mixed			$field
+	 * @param 	array|string 	$args
+	 * @return 	mixed
 	 */
-	public static function sanitize(mixed $var, mixed $args = null): mixed;
+	public static function sanitize($var, $args = null);
 }

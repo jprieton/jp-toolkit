@@ -23,7 +23,7 @@ function jp_toolkit_sanitize_yes_no_field($value): string
 
 	if (is_numeric($value)) {
 		// Check if value is a numeric
-		$filtered = $value ? 'yes' : 'no';
+		$filtered = $value == 1 ? 'yes' : 'no';
 	} else
 
 	if (is_string($value)) {
