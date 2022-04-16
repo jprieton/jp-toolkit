@@ -22,14 +22,14 @@ defined('ABSPATH') || exit;
  * @author        Javier Prieto
  * @since         1.0.0
  */
-class CronSchedules
+class AddCronSchedules
 {
 	/**
 	 * Constructor class
 	 *
 	 * @since         1.1.0
 	 */
-	public function init()
+	public function __construct()
 	{
 		// Adds non-default cron schedules
 		add_filter('cron_schedules', [$this, 'add_cron_schedules'], 999);

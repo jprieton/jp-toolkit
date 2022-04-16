@@ -24,7 +24,7 @@ use JPToolkit\Ajax\AbstractAjax;
  * @package     JPToolkit
  * @subpackage  Framework\Schedule
  */
-abstract class AbstractScheduleEvent extends AbstractAjax
+abstract class AbstractScheduleEvent
 {
 	/**
 	 * Action hook

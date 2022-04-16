@@ -20,7 +20,7 @@ defined('ABSPATH') || exit;
 function jp_toolkit_load(): void
 {
 	// Add non-default cron schedules
-	new JPToolkit\Framework\Schedule\CronSchedules;
+	new JPToolkit\Framework\Schedule\AddCronSchedules;
 
 	// Init sanitize presets
 	new JPToolkit\Framework\Sanitize\SanitizePresets;
