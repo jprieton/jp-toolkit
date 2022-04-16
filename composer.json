@@ -27,7 +27,8 @@
 		},
 		"files": [
 			"includes/init.php",
-			"includes/formatting.php"
+			"includes/formatting.php",
+			"includes/user.php"
 		]
 	},
 	"require-dev": {
