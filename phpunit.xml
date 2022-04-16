@@ -6,6 +6,7 @@
 	convertErrorsToExceptions="true"
 	convertNoticesToExceptions="true"
 	convertWarningsToExceptions="true"
+	stopOnFailure="false"
 	>
 	<testsuites>
 		<testsuite name="default">
@@ -13,4 +14,7 @@
 			<exclude>./tests/test-sample.php</exclude>
 		</testsuite>
 	</testsuites>
+	<php>
+	     <const name="WP_TESTS_PHPUNIT_POLYFILLS_PATH" value="vendor/yoast/phpunit-polyfills"/>
+	</php>
 </phpunit>
