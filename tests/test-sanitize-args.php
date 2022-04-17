@@ -1,6 +1,6 @@
 <?php
 
-use JPToolkit\Framework\Sanitize\Sanitize;
+use JPToolkit\Framework\Sanitize\Data;
 
 
 class Test_Sanitize_Args extends WP_UnitTestCase
@@ -55,7 +55,7 @@ class Test_Sanitize_Args extends WP_UnitTestCase
 			foreach ($item['test'] as $value) {
 				$this->assertEquals(
 					$item['expected'],
-					Sanitize::sanitize($value, $item['args'])
+					Data::sanitize($value, $item['args'])
 				);
 			}
 		}

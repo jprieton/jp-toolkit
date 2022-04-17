@@ -1,6 +1,6 @@
 <?php
 /**
- * Sanitize class for sanitizing $_GET values
+ * Data class for sanitizing values
  *
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
@@ -14,14 +14,14 @@ namespace JPToolkit\Framework\Sanitize;
 defined('ABSPATH') || exit;
 
 /**
- * Sanitize class for sanitizing $_GET values
+ * Data class for sanitizing values
  *
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
  * @since 		{VERSION}
  * @author 		Javier Prieto
  */
-class Sanitize extends AbstractSanitize implements SanitizeInterface
+class Data extends AbstractSanitize implements SanitizeInterface
 {
 	/**
 	 * Sanitizes a value.
