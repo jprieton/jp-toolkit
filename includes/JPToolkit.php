@@ -33,6 +33,9 @@ class JPToolkit
 	 */
 	public function init()
 	{
+		// Maybe run the updater.
+		Core\Install::init();
+
 		// Initialize admin
 		new AdminInit();
 
