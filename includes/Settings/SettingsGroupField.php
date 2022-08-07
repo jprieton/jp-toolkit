@@ -1,7 +1,17 @@
 <?php
 
+/**
+ * SettingField class
+ *
+ * @package        Admin
+ * @subpackage     Settings
+ * @since          1.0.0
+ * @author         Javier Prieto
+ */
+
 namespace JPToolkit\Settings;
 
+// If this file is called directly, abort.
 defined('ABSPATH') || exit;
 
 use JPToolkit\Template\Html;
@@ -12,10 +22,9 @@ use JPToolkit\Settings\SettingsGroup;
  * SettingField class
  *
  * @package        Admin
- *
- * @author      Javier Prieto <jprieton@gmail.com>
- * @copyright	  Copyright (c) 2017, SMG | Javier Prieto
+ * @subpackage     Settings
  * @since          1.0.0
+ * @author         Javier Prieto
  */
 class SettingsGroupField extends SettingsGroup
 {

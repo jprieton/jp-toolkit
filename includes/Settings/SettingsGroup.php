@@ -1,7 +1,17 @@
 <?php
 
+/**
+ * Settings_Group class
+ *
+ * @package        JPToolkit
+ * @subpackage     Settings
+ * @since          1.0.0
+ * @author         Javier Prieto
+ */
+
 namespace JPToolkit\Settings;
 
+// If this file is called directly, abort.
 defined('ABSPATH') || exit;
 
 /**
@@ -151,7 +161,7 @@ class SettingsGroup
 	 * Merge options before saving
 	 *
 	 * @since   1.0.0
-	 * @param   array     $new_value
+	 * @param   string     $new_value
 	 * @return  array
 	 */
 	public function pre_update_option($new_value)
