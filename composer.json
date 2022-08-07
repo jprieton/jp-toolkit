@@ -28,7 +28,9 @@
 		"files": [
 			"includes/init.php",
 			"includes/formatting.php",
-			"includes/user.php"
+			"includes/user.php",
+			"includes/update-functions.php",
+			"includes/general-template.php"
 		]
 	},
 	"require-dev": {
