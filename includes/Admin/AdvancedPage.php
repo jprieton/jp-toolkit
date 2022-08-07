@@ -64,7 +64,7 @@ final class AdvancedPage extends AbstractSettingsPage
 	 */
 	public function add_advanced_page()
 	{
-		parent::add_submenu_page(__('Advanced', 'jp-toolkit'), __('Advanced', 'jp-toolkit'), 'activate_plugins');
+		parent::add_submenu_page(__('Advanced Settings', 'jp-toolkit'), __('Advanced', 'jp-toolkit'), 'activate_plugins');
 	}
 
 	/**
