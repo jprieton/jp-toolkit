@@ -7,12 +7,12 @@
  * @subpackage    RequestHelper
  */
 
-namespace JPToolkit\HtmlHelper;
+namespace JPToolkit\Template;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-use JPToolkit\HtmlHelper\Html;
+use JPToolkit\Template\Html;
 
 /**
  * Form class
@@ -24,7 +24,7 @@ use JPToolkit\HtmlHelper\Html;
  * @see         https://docs.phalconphp.com/en/latest/reference/tags.html#tag-service
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper
+ * @subpackage    Template
  * @author        Javier Prieto
  * @since         0.3.0
  */

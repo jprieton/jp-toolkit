@@ -25,6 +25,9 @@ function jp_toolkit_init(): void
 	// Add non-default cron schedules
 	JPToolkit\Schedule::init();
 
+	// Initialize admin
+	JPToolkit\Admin::init();
+
 	// Init sanitize presets
 	new JPToolkit\Framework\Sanitize\SanitizePresets;
 }

@@ -4,10 +4,10 @@
  * generating commonly used HTML tags
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper
+ * @subpackage    Template
  */
 
-namespace JPToolkit\HtmlHelper;
+namespace JPToolkit\Template;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
  * @see           https://docs.phalconphp.com/en/latest/reference/tags.html#tag-service
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper
+ * @subpackage    Template
  * @since         0.1.0
  * @author        Javier Prieto
  */
