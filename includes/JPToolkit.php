@@ -13,7 +13,7 @@ namespace JPToolkit;
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-use JPToolkit\HtmlHelper\Init as HtmlHelperInit;
+use JPToolkit\Template\Init as TemplateInit;
 use JPToolkit\AssetsHelper\Init as AssetsHelperInit;
 use JPToolkit\Admin\Init as AdminInit;
 
@@ -33,14 +33,11 @@ class JPToolkit
 	 */
 	public function init()
 	{
-		// Maybe run the updater.
-		Core\Install::init();
-
 		// Initialize admin
 		new AdminInit();
 
 		// Initialize helpers
-		new HtmlHelperInit();
+		new TemplateInit();
 		new AssetsHelperInit();
 	}
 }

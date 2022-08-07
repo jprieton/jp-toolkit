@@ -9,7 +9,7 @@
  * @subpackage  Schedule
  */
 
-namespace JPToolkit\Framework\Schedule;
+namespace JPToolkit\Schedule;
 
 // If this file is called directly, abort.
 defined('ABSPATH') || exit;

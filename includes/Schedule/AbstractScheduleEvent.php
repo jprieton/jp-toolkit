@@ -6,15 +6,13 @@
  * @author      Javier Prieto
  * @since       {VERSION}
  * @package     JPToolkit
- * @subpackage  Framework\Schedule
+ * @subpackage  Schedule
  */
 
-namespace JPToolkit\Framework\Schedule;
+namespace JPToolkit\Schedule;
 
 // If this file is called directly, abort.
 defined('ABSPATH') || exit;
-
-use JPToolkit\Ajax\AbstractAjax;
 
 /**
  * Class to add scheduled events
@@ -22,7 +20,7 @@ use JPToolkit\Ajax\AbstractAjax;
  * @author      Javier Prieto
  * @since       {VERSION}
  * @package     JPToolkit
- * @subpackage  Framework\Schedule
+ * @subpackage  Schedule
  */
 abstract class AbstractScheduleEvent
 {

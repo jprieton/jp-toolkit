@@ -52,5 +52,5 @@ if (version_compare(PHP_VERSION, '7.0', '<')) {
 
     // Initialize the plugin
     add_action('plugins_loaded', [new JPToolkit\JPToolkit(), 'init'], -1);
-    add_action('plugins_loaded', 'jp_toolkit_load', -1);
+    add_action('plugins_loaded', 'jp_toolkit_init', -1);
 }

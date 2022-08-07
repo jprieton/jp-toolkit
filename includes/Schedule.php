@@ -4,12 +4,11 @@
  * This class adds adds non-default cron schedules.
  *
  * @package       JPToolkit
- * @subpackage    Framework\Schedule
  * @author        Javier Prieto
  * @since         1.0.0
  */
 
-namespace JPToolkit\Framework\Schedule;
+namespace JPToolkit;
 
 // If this file is called directly, abort.
 defined('ABSPATH') || exit;
@@ -18,21 +17,37 @@ defined('ABSPATH') || exit;
  * This class adds adds non-default cron schedules.
  *
  * @package       JPToolkit
- * @subpackage    Framework\Schedule
  * @author        Javier Prieto
  * @since         1.0.0
  */
-class AddCronSchedules
+class Schedule
 {
+	private static $instance = null;
+
 	/**
 	 * Constructor class
 	 *
 	 * @since         1.1.0
 	 */
-	public function __construct()
+	private function __construct()
 	{
 		// Adds non-default cron schedules
 		add_filter('cron_schedules', [$this, 'add_cron_schedules'], 999);
+	}
+
+	/**
+	 * Initialize the schedule module.
+	 *
+	 * @since     1.0.0
+	 * @return	  Schedule
+	 */
+	public static function init(): Schedule
+	{
+		if (is_null(self::$instance)) {
+			self::$instance = new self();
+		}
+
+		return self::$instance;
 	}
 
 	/**
