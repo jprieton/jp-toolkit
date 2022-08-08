@@ -6,10 +6,6 @@
  * @package JP Toolkit
  */
 
-
-// If this file is called directly, abort.
-defined('ABSPATH') || exit;
-
 /**
  * Initialize the plugin.
  *
@@ -24,6 +20,9 @@ function jp_toolkit_init(): void
 
 	// Add non-default cron schedules
 	JPToolkit\Schedule::init();
+
+	// Initialize html handlers.
+	JPToolkit\Template\Init::init();
 
 	// Initialize admin
 	JPToolkit\Admin::init();

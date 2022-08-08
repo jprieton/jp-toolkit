@@ -3,10 +3,10 @@
  * Trait to add Img shorthand handlers
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper\Traits
+ * @subpackage    Template\Traits
  */
 
-namespace JPToolkit\HtmlHelper\Traits;
+namespace JPToolkit\Template\Traits;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
  * @property      string $name Shorthand name
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper\Traits
+ * @subpackage    Template\Traits
  * @since         1.1.0
  * @author        Javier Prieto
  */
@@ -28,7 +28,7 @@ trait ImgHandler {
    *
    * @since     1.1.0
    */
-  use \JPToolkit\HtmlHelper\Traits\CommonHandler;
+  use \JPToolkit\Template\Traits\CommonHandler;
 
   /**
    * Array with the WordPress image sizes

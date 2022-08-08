@@ -6,13 +6,13 @@
  * @subpackage    Filter
  */
 
-namespace JPToolkit\HtmlHelper\Handlers;
+namespace JPToolkit\Template\Handlers;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-use JPToolkit\HtmlHelper\Interfaces\ImgHandler as InterfaceImgHandler;
-use JPToolkit\HtmlHelper\Abstracts\ImgHandler as AbstractImgHandler;
+use JPToolkit\Template\Interfaces\ImgHandler as InterfaceImgHandler;
+use JPToolkit\Template\Abstracts\ImgHandler as AbstractImgHandler;
 
 /**
  * Add the pixel shorthand to Html::img() method
@@ -30,7 +30,7 @@ class ImgPixelHandler extends AbstractImgHandler implements InterfaceImgHandler 
    *
    * @since     1.1.0
    */
-  use \JPToolkit\HtmlHelper\Traits\ImgHandler;
+  use \JPToolkit\Template\Traits\ImgHandler;
 
   /**
    * Shorthand handler

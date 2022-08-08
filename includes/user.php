@@ -1,8 +1,5 @@
 <?php
 
-// If this file is called directly, abort.
-defined('ABSPATH') || exit;
-
 /**
  * Check if the user has any of roles specified in the parameter.
  *
@@ -28,7 +25,6 @@ function jp_toolkit_user_has_role(array $roles, $user_id = null): bool
 
 	// Get user data
 	$user = new WP_User($user_id);
-
 
 	return (bool) array_intersect($roles, $user->roles ?? []);
 }

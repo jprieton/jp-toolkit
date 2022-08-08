@@ -6,7 +6,7 @@
  * @subpackage    Helpers\Traits
  */
 
-namespace JPToolkit\HtmlHelper\Traits;
+namespace JPToolkit\Template\Traits;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;

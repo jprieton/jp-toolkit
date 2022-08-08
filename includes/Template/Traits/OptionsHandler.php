@@ -6,7 +6,7 @@
  * @subpackage    Helpers\Traits
  */
 
-namespace JPToolkit\HtmlHelper\Traits;
+namespace JPToolkit\Template\Traits;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -28,7 +28,7 @@ trait OptionsHandler {
    *
    * @since     1.1.0
    */
-  use \JPToolkit\HtmlHelper\Traits\CommonHandler;
+  use \JPToolkit\Template\Traits\CommonHandler;
 
   /**
    * Class constructor

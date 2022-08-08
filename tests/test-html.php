@@ -1,6 +1,6 @@
 <?php
 
-use JPToolkit\HtmlHelper\Html;
+use JPToolkit\Template\Html;
 
 /**
  * Sample test case.

@@ -6,7 +6,7 @@
  * @subpackage    Helpers\Interfaces
  */
 
-namespace JPToolkit\HtmlHelper\Interfaces;
+namespace JPToolkit\Template\Interfaces;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;

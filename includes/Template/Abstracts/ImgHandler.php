@@ -3,10 +3,10 @@
  * Abstract class to add a shorthand handler for images
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper\Abstracts
+ * @subpackage    Template\Abstracts
  */
 
-namespace JPToolkit\HtmlHelper\Abstracts;
+namespace JPToolkit\Template\Abstracts;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
  * Abstract class to add a shorthand handler for images
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper\Abstracts
+ * @subpackage    Template\Abstracts
  * @since         1.1.0
  * @author        Javier Prieto
  */

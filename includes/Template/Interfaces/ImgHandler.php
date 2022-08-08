@@ -6,7 +6,7 @@
  * @subpackage    Interfaces
  */
 
-namespace JPToolkit\HtmlHelper\Interfaces;
+namespace JPToolkit\Template\Interfaces;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
  * An Interface to add an image shorthand
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper\Interfaces
+ * @subpackage    Template\Interfaces
  * @since         1.1.0
  * @author        Javier Prieto
  */

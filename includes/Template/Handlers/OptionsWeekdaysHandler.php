@@ -6,12 +6,12 @@
  * @subpackage    Helpers\Filters
  */
 
-namespace JPToolkit\HtmlHelper\Handlers;
+namespace JPToolkit\Template\Handlers;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-use JPToolkit\HtmlHelper\Interfaces\OptionsHandler as InterfaceOptionsHandler;
+use JPToolkit\Template\Interfaces\OptionsHandler as InterfaceOptionsHandler;
 
 /**
  * Add the weekdays shorthand to the Form:.options method
@@ -28,7 +28,7 @@ class OptionsWeekdaysHandler implements InterfaceOptionsHandler {
    *
    * @since     1.1.0
    */
-  use \JPToolkit\HtmlHelper\Traits\OptionsHandler;
+  use \JPToolkit\Template\Traits\OptionsHandler;
 
   /**
    * The options handler name

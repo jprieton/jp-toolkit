@@ -3,15 +3,15 @@
  * Shortcode class.
  *
  * @package       JPToolkit
- * @subpackage    HtmlHelper
+ * @subpackage    Template
  */
 
-namespace JPToolkit\HtmlHelper;
+namespace JPToolkit\Template;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-use JPToolkit\HtmlHelper\Html;
+use JPToolkit\Template\Html;
 
 /**
  * Shortcode class
