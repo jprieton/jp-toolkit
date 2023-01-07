@@ -16,7 +16,7 @@ defined('ABSPATH') || exit;
  * The Init class initializes the Assets Helper
  *
  * @since         1.0.0
- * 
+ *
  * @package       JPToolkit
  * @subpackage    AssetsHelper
  * @author        Javier Prieto
@@ -41,7 +41,8 @@ class Init
      */
     public function __construct()
     {
-        $this->register_assets();
+		// Commented out because it's not needed for now
+        // $this->register_assets();
 
         // Add preconnect tags
         add_filter('wp_resource_hints', [$this, 'resource_hints'], 99, 2);
@@ -87,7 +88,7 @@ class Init
 
     /**
      * Add resource hints to header
-     * 
+     *
      * @since         1.1.0
      */
     public function resource_hints(array $urls, string $relation_type)
@@ -105,7 +106,7 @@ class Init
 
     /**
      * Add resource hints to list
-     * 
+     *
      * @since         1.1.0
      */
     private function add_hint(string $relation_type, string $url)
