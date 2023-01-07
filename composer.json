@@ -1,32 +1,45 @@
 {
-    "name": "jp-toolkit/jp-toolkit",
-    "description": "An integrated bundle of JP Toolkit modules and third party libraries",
-    "type": "wordpress-plugin",
-    "keywords": [
-        "wordpress",
-        "wordpress-plugin",
-        "wordpress-development",
-        "jp-toolkit",
-        "html",
-        "form"
-    ],
-    "homepage": "https://github.com/jprieton/jp-toolkit",
-    "license": "GPL-3.0-or-later",
-    "minimum-stability": "stable",
-    "require": {
-        "wptrt/admin-notices": "1.0.*",
-        "php": ">=7"
-    },
-    "support": {
-        "issues": "https://github.com/jprieton/jp-toolkit/issues",
-        "wiki": "https://github.com/jprieton/jp-toolkit/wiki"
-    },
-    "autoload": {
-        "psr-4": {
-            "JPToolkit\\": "includes/"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^7"
-    }
+	"name": "jp-toolkit/jp-toolkit",
+	"description": "An integrated bundle of JP Toolkit modules and third party libraries",
+	"type": "wordpress-plugin",
+	"keywords": [
+		"wordpress",
+		"wordpress-plugin",
+		"wordpress-development",
+		"jp-toolkit",
+		"html",
+		"form"
+	],
+	"homepage": "https://github.com/jprieton/jp-toolkit",
+	"license": "GPL-3.0-or-later",
+	"minimum-stability": "stable",
+	"require": {
+		"wptrt/admin-notices": "1.0.*",
+		"php": ">=7"
+	},
+	"support": {
+		"issues": "https://github.com/jprieton/jp-toolkit/issues",
+		"wiki": "https://github.com/jprieton/jp-toolkit/wiki"
+	},
+	"autoload": {
+		"psr-4": {
+			"JPToolkit\\": "inc/"
+		},
+		"files": [
+			"inc/init.php",
+			"inc/formatting.php",
+			"inc/user.php",
+			"inc/update-functions.php",
+			"inc/general-template.php"
+		]
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9",
+		"yoast/phpunit-polyfills" : "1.0.3"
+	},
+	"scripts": {
+		"test": [
+			"php vendor/bin/phpunit"
+		]
+	}
 }

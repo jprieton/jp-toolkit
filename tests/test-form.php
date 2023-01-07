@@ -1,6 +1,6 @@
 <?php
 
-use JPToolkit\HtmlHelper\Form;
+use JPToolkit\Template\Form;
 
 class TestForm extends WP_UnitTestCase {
 
