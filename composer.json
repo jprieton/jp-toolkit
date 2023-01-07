@@ -23,14 +23,14 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"JPToolkit\\": "includes/"
+			"JPToolkit\\": "inc/"
 		},
 		"files": [
-			"includes/init.php",
-			"includes/formatting.php",
-			"includes/user.php",
-			"includes/update-functions.php",
-			"includes/general-template.php"
+			"inc/init.php",
+			"inc/formatting.php",
+			"inc/user.php",
+			"inc/update-functions.php",
+			"inc/general-template.php"
 		]
 	},
 	"require-dev": {
