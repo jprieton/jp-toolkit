@@ -22,7 +22,7 @@ defined('ABSPATH') || exit;
  * @package     JPToolkit
  * @subpackage  Ajax
  */
-interface AJAXInterface
+interface AjaxInterface
 {
 	/**
 	 * AJAX handler

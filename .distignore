@@ -21,3 +21,7 @@ webpack.config.js
 .gitlab-ci.yml
 .phpcs.xml.dist
 .travis.yml
+.editorconfig
+.eslintrc
+.stylelintrc.json
+phpunit.xml
