@@ -4,7 +4,7 @@
  * AJAX Interface
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Ajax
  */
@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * AJAX Interface
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Ajax
  */
@@ -27,7 +27,7 @@ interface AjaxInterface
 	/**
 	 * AJAX handler
 	 *
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 * @return 	void
 	 */
 	public function ajax_handler();

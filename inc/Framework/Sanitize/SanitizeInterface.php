@@ -6,7 +6,7 @@
  * @author 		Javier Prieto
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
- * @since 		{VERSION}
+ * @since 		2.0.1
  */
 
 namespace JPToolkit\Framework\Sanitize;
@@ -20,14 +20,14 @@ defined('ABSPATH') || exit;
  * @author 		Javier Prieto
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
- * @since 		{VERSION}
+ * @since 		2.0.1
  */
 interface SanitizeInterface
 {
 	/**
 	 * Sanitize handler
 	 *
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 * @param 	mixed			$field
 	 * @param 	array|string 	$args
 	 * @return 	mixed

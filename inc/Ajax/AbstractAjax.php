@@ -4,7 +4,7 @@
  * Abstract class to handle AJAX requests.
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Ajax
  */
@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * Abstract class to handle AJAX requests.
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Ajax
  */
@@ -29,7 +29,7 @@ abstract class AbstractAjax
 	 * AJAX endpoint
 	 *
 	 * @var		string
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 */
 	protected string $ajax_action;
 
@@ -37,7 +37,7 @@ abstract class AbstractAjax
 	 * Enable/disable public access to the AJAX endpoint.
 	 *
 	 * @var 	boolean
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 */
 	protected bool $allow_public = false;
 
@@ -45,7 +45,7 @@ abstract class AbstractAjax
 	 * Enable/disable private access to the AJAX endpoint.
 	 *
 	 * @var 	boolean
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 */
 	protected bool $allow_private = false;
 
@@ -60,7 +60,7 @@ abstract class AbstractAjax
 	/**
 	 * Add Ajax hooks
 	 *
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 * @return 	void
 	 */
 	protected function add_ajax_hooks()

@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/jprieton/jp-toolkit
  * Description:         JP Toolkit for WordPress
  * Tags:                jp-toolkit
- * Version:             2.0.0
+ * Version:             2.0.1
  * Requires at least:   5.2
  * Tested up to:        6.0
  * Author:              Javier Prieto
@@ -35,22 +35,33 @@ defined('ABSPATH') || exit;
 // Autoloader
 require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 
+/**
+ * Returns the main instance of JPToolkit to prevent the need to use globals.
+ *
+ * @since 2.0.1
+ * @return JPToolkit\JPToolkit
+ */
+function jp_toolkit()
+{
+	// Initialize the plugin
+	return JPToolkit\JPToolkit::get_instance();
+}
+
 // Check if the minimum requirements are met.
 if (version_compare(PHP_VERSION, '7.0', '<')) {
-    $message = __('JP Toolkit requires PHP version 7.0 or later.', 'jp-toolkit');
-    $options = [
-        'type' => 'error'
-    ];
+	$message = __('JP Toolkit requires PHP version 7.0 or later.', 'jp-toolkit');
+	$options = [
+		'type' => 'error'
+	];
 
-    // Show notice for minimum PHP version required for JP Toolkit HTML helper for WordPress.
-    $notices = new WPTRT\AdminNotices\Notices();
-    $notices->add('jp-toolkit-php-warning', '', $message, $options);
-    $notices->boot();
+	// Show notice for minimum PHP version required for JP Toolkit HTML helper for WordPress.
+	$notices = new WPTRT\AdminNotices\Notices();
+	$notices->add('jp-toolkit-php-warning', '', $message, $options);
+	$notices->boot();
 } else {
-    define('JPTOOLKIT_VERSION', '2.0.0');
-    define('JPTOOLKIT_FILENAME', __FILE__);
+	define('JPTOOLKIT_VERSION', '2.0.1');
+	define('JPTOOLKIT_FILENAME', __FILE__);
 
-    // Initialize the plugin
-    add_action('plugins_loaded', [new JPToolkit\JPToolkit(), 'init'], -1);
-    add_action('plugins_loaded', 'jp_toolkit_init', -1);
+	// Initialize the plugin
+	add_action('plugins_loaded', 'jp_toolkit', -1);
 }

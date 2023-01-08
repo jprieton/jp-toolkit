@@ -18,7 +18,7 @@ use JPToolkit\Template\Loader as TemplateLoader;
  * For the $name parameter, if the file is called "{slug}-special.php" then specify
  * "special".
  *
- * @since {VERSION}
+ * @since 2.0.1
  *
  * @param string $slug The slug name for the generic template.
  * @param string $name The name of the specialised template.
@@ -34,7 +34,7 @@ function jp_toolkit_get_template_part($slug, $name = null, $args = array())
 	 * The dynamic portion of the hook name, `$slug`, refers to the slug name
 	 * for the generic template part.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 *
 	 * @param string      $slug The slug name for the generic template.
 	 * @param string|null $name The name of the specialized template.

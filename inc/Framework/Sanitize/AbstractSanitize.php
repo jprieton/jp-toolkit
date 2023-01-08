@@ -4,7 +4,7 @@
  * Abstract class to handle Sanitizer.
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Framework\Sanitize
  */
@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * Abstract class to handle Sanitizer.
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Framework\Sanitize
  */
@@ -28,7 +28,7 @@ abstract class AbstractSanitize
 	/**
 	 * Sanitizes a value.
 	 *
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 * @param 	mixed	$value
 	 * @param 	array 	$args
 	 * @return 	mixed
@@ -71,7 +71,7 @@ abstract class AbstractSanitize
 	/**
 	 * Executes the callbacks
 	 *
-	 * @since     {VERSION}
+	 * @since     2.0.1
 	 * @param     mixed $value
 	 * @param     array $callable
 	 * @return    mixed
@@ -88,7 +88,7 @@ abstract class AbstractSanitize
 	/**
 	 * Executes the filters
 	 *
-	 * @since     {VERSION}
+	 * @since     2.0.1
 	 * @param     mixed $value
 	 * @param     array $filter
 	 * @return    mixed
@@ -106,7 +106,7 @@ abstract class AbstractSanitize
 	/**
 	 * Return preset value for sanitizations
 	 *
-	 * @since   {VERSION}
+	 * @since   2.0.1
 	 * @param 	string $preset
 	 * @return 	array
 	 */

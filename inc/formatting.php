@@ -4,7 +4,7 @@
 /**
  * Sanitizes a string from user input or from the database.
  *
- * @since {VERSION}
+ * @since 2.0.1
  *
  * @param   bool|string|int $value The value being evaluated.
  * @return  string          Sanitized string (yes|no).

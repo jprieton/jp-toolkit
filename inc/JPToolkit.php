@@ -13,10 +13,6 @@ namespace JPToolkit;
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-use JPToolkit\Template\Init as TemplateInit;
-use JPToolkit\AssetsHelper\Init as AssetsHelperInit;
-use JPToolkit\Admin\Init as AdminInit;
-
 /**
  * This class is required to initialize the shorthands bundled in this plugin
  *
@@ -24,20 +20,36 @@ use JPToolkit\Admin\Init as AdminInit;
  * @author        Javier Prieto
  * @since         1.0.0
  */
-class JPToolkit
+final class JPToolkit
 {
+	/**
+	 * Get trait of single
+	 */
+	use Core\Traits\Singleton;
+
 	/**
 	 * Constructor class
 	 *
-	 * @since         1.1.0
+	 * @since 1.1.0
 	 */
-	public function init()
+	protected function __construct()
 	{
-		// Initialize admin
-		new AdminInit();
+		// Run the updater/installer.
+		Core\Install::init();
 
-		// Initialize helpers
-		new TemplateInit();
-		new AssetsHelperInit();
+		// Add non-default cron schedules
+		Schedule::init();
+
+		// Initialize html handlers.
+		Template\Init::init();
+
+		// Initialize Assets helpers
+		//new AssetsHelper\Init();
+
+		// Initialize admin
+		new Admin\Init();
+
+		// Init sanitize presets
+		new Framework\Sanitize\SanitizePresets;
 	}
 }

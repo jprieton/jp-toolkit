@@ -4,7 +4,7 @@
  *
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
- * @since 		{VERSION}
+ * @since 		2.0.1
  * @author 		Javier Prieto
  */
 
@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  *
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
- * @since 		{VERSION}
+ * @since 		2.0.1
  * @author 		Javier Prieto
  */
 class Data extends AbstractSanitize implements SanitizeInterface
@@ -26,7 +26,7 @@ class Data extends AbstractSanitize implements SanitizeInterface
 	/**
 	 * Sanitizes a value.
 	 *
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 * @param 	mixed			$field
 	 * @param 	array|string 	$args
 	 * @return 	mixed
