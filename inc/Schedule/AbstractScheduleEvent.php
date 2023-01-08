@@ -4,7 +4,7 @@
  * Class to add scheduled events
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Schedule
  */
@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * Class to add scheduled events
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Schedule
  */
@@ -27,7 +27,7 @@ abstract class AbstractScheduleEvent
 	/**
 	 * Action hook
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @var string
 	 */
 	protected $action = '';
@@ -35,7 +35,7 @@ abstract class AbstractScheduleEvent
 	/**
 	 * Interval to schedule cron task
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @var string
 	 */
 	protected $interval = 'daily';
@@ -43,7 +43,7 @@ abstract class AbstractScheduleEvent
 	/**
 	 * Class constructor
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 */
 	public function __construct()
 	{
@@ -54,7 +54,7 @@ abstract class AbstractScheduleEvent
 	/**
 	 * Add cron task to update pageviews
 	 *
-	 * @since  {VERSION}
+	 * @since  2.0.1
 	 * @return void
 	 */
 	public function schedule_event()

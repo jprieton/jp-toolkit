@@ -5,7 +5,7 @@
  *
  * @package     JPToolkit
  * @subpackage  Core
- * @version 	{VERSION}
+ * @version 	2.0.1
  */
 
 
@@ -16,7 +16,7 @@ namespace JPToolkit\Core;
  *
  * @package     JPToolkit
  * @subpackage  Core
- * @version 	{VERSION}
+ * @version 	2.0.1
  */
 class Install
 {

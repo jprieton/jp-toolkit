@@ -5,7 +5,7 @@
  *
  * @package       JPToolkit
  * @subpackage    Template
- * @since         {VERSION}
+ * @since         2.0.1
  * @author        Javier Prieto
  */
 
@@ -19,7 +19,7 @@ defined('ABSPATH') || exit;
  *
  * @package       JPToolkit
  * @subpackage    Template
- * @since         {VERSION}
+ * @since         2.0.1
  * @author        Javier Prieto
  */
 class Loader

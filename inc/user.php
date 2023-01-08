@@ -3,7 +3,7 @@
 /**
  * Check if the user has any of roles specified in the parameter.
  *
- * @since	{VERSION}
+ * @since	2.0.1
  *
  * @param 	string|array 	$roles		Array of roles
  * @param	int 			$user_id 	User ID, if null current user ID is used

@@ -50,7 +50,7 @@ class Init
 	/**
 	 * Initialize the class.
 	 *
-	 * @since 	{VERSION}
+	 * @since 	2.0.1
 	 * @author 	Javier Prieto
 	 * @return  void
 	 */

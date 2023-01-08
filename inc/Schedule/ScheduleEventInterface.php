@@ -4,7 +4,7 @@
  * Interface to add scheduled events
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Schedule
  */
@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * Interface to add scheduled events
  *
  * @author      Javier Prieto
- * @since       {VERSION}
+ * @since       2.0.1
  * @package     JPToolkit
  * @subpackage  Schedule
  */
@@ -27,7 +27,7 @@ interface ScheduleEventInterface
 	/**
 	 * Shcedule event handler
 	 *
-	 * @since   {VERSION}
+	 * @since   2.0.1
 	 * @return  void
 	 */
 	public function event_handler();

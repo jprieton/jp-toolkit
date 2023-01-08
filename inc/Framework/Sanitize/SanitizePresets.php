@@ -5,7 +5,7 @@
  *
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
- * @since 		{VERSION}
+ * @since 		2.0.1
  * @author 		Javier Prieto
  */
 
@@ -19,7 +19,7 @@ defined('ABSPATH') || exit;
  *
  * @package 	JPToolkit
  * @subpackage 	Framework\Sanitize
- * @since 		{VERSION}
+ * @since 		2.0.1
  * @author 		Javier Prieto
  */
 class SanitizePresets
@@ -46,7 +46,7 @@ class SanitizePresets
 	/**
 	 * Strips out all characters that are not allowable in an email.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @param array $preset
 	 * @return array
 	 */
@@ -61,7 +61,7 @@ class SanitizePresets
 	/**
 	 * Sanitizes a string from user input or from the database.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @param array $preset
 	 * @return void
 	 */
@@ -76,7 +76,7 @@ class SanitizePresets
 	/**
 	 * Sanitizes a string from user input or from the database.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @param array $preset
 	 * @return void
 	 */
@@ -91,7 +91,7 @@ class SanitizePresets
 	/**
 	 * Sanitizes a integer from user input or from the database.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @param array $preset
 	 * @return void
 	 */
@@ -106,7 +106,7 @@ class SanitizePresets
 	/**
 	 * Sanitizes a boolean from user input or from the database.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @param array $preset
 	 * @return array
 	 */
@@ -121,7 +121,7 @@ class SanitizePresets
 	/**
 	 * Sanitizes a value from user input or from the database.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.1
 	 * @param array $preset
 	 * @return array
 	 */
