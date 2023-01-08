@@ -7,7 +7,7 @@
 		"compile": "webpack --mode=production",
 		"compile:dev": "webpack --mode=development",
 
-		"dist": "composer install --no-dev --optimize-autoloader && rm -rf ./dist && wp-scripts build && rm ../jp-toolkit.zip && wp dist-archive . ../plugins/jp-toolkit.zip",
+		"dist": "composer install --no-dev --optimize-autoloader && rm -rf ./dist && wp-scripts build && rm -f ../jp-toolkit.zip && wp dist-archive . ../jp-toolkit.zip",
 		"build": "composer install --no-dev --optimize-autoloader && wp-scripts build",
 		"check-engines": "wp-scripts check-engines",
 		"check-licenses": "wp-scripts check-licenses --prod --gpl3",
