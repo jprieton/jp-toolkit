@@ -26,7 +26,6 @@
 			"JPToolkit\\": "inc/"
 		},
 		"files": [
-			"inc/init.php",
 			"inc/formatting.php",
 			"inc/user.php",
 			"inc/update-functions.php",
