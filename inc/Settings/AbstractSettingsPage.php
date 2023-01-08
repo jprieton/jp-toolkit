@@ -40,21 +40,21 @@ abstract class AbstractSettingsPage
 	protected $page_description;
 
 	/**
-	 * Option name
+	 * Option name slug
 	 * @since   1.0.0
 	 * @var     string
 	 */
 	protected $option_name;
 
 	/**
-	 * Option group
+	 * Option group slug
 	 * @since   1.0.0
 	 * @var     string
 	 */
 	protected $option_group;
 
 	/**
-	 * Option page
+	 * Option page slug
 	 * @since   1.0.0
 	 * @var     string
 	 */
